@@ -1,0 +1,63 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+
+# Environments
+venv/
+env/
+.venv/
+.env
+
+# Django
+*.log
+*.pot
+*.py[cod]
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+django_admin_log.csv
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cloudinary
+cloudinary_storage/
+
+# Byte-compiled / cache
+*.egg-info/
+.eggs/
+__pycache__/
+*.cover
+*.py,cover
+
+# Migrations (optionnel : tu peux les garder si tu veux versionner)
+*/migrations/__pycache__/
+*/migrations/*.pyc
+# Mais pas les __init__.py
+!*/migrations/__init__.py
+
+# Logs
+*.log
+
+# Test / coverage
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.coveragerc
+htmlcov/
+.pytest_cache/
+
+# Docker
+*.env
+docker-compose.override.yml
