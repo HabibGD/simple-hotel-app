@@ -9,8 +9,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 # SECURITY
-SECRET_KEY = 'django-insecure-e@nta=gyipy2de3ndv@bn!m)oot75&gsvx*bc9y&1f@40t4((a'
+
 DEBUG = False
+
+
+
 ALLOWED_HOSTS = ["*"]
 
 # APPLICATIONS
