@@ -10,7 +10,7 @@ load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 # SECURITY
 SECRET_KEY= 'django-insecure-quelquechose123456789'
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'cloudinary_storage',
 
+    'corsheaders',
     'rest_framework',
     'drf_yasg',
 
@@ -35,6 +36,7 @@ INSTALLED_APPS = [
 
 # MIDDLEWARE (WhiteNoise AJOUTÉ)
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',  # 🔥 IMPORTANT
     'django.contrib.sessions.middleware.SessionMiddleware',
