@@ -13,6 +13,8 @@ class HotelSerializer(serializers.ModelSerializer):
             'prix',
             'image',
             'image_url',
+            'description',
+            'contact',
             'created_at',
             'updated_at',
         ]
