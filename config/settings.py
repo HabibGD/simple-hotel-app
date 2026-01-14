@@ -49,6 +49,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://front-hotel-xi.vercel.app",
 ]
 
 ROOT_URLCONF = 'config.urls'
